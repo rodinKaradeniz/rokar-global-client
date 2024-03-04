@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 35, 83, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 1.1;
+  z-index: 1000;
+  margin-bottom: 2rem;
+}
+
+.navbarTitle a {
+  font-size: large;
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.navbarHeader {
+  flex: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.navbarHeader img {
+  width: 100px;
+  border-radius: 7px;
+}
+
+.navbarLinksContainer {
+  flex: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 100px;
+  gap: 1rem;
+}
+
+.navbarLinksContainer .navbarLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLinksContainer .navbarLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbarLinksContainer .navbarLinks a::after {
+  content: "";
+  display: block;
+  bottom: -2px;
+  margin-top: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.5s ease; /* Add a transition for the underline effect */
+}
+
+.navbarLinksContainer .navbarLinks a:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+.navbarLinksContainer .navbarLinks a:hover {
+  transform: scale(1.1); /* Scale the element on hover */
+}
+
+.navbarLinksContainer .contact-link {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarHeader {
+    padding-left: 0px;
+    padding-top: 100px;
+  }
+
+  .navbarLinks {
+    padding-right: 0px;
+  }
+}

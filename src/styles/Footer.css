@@ -1,0 +1,91 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0), black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer p {
+  color: white;
+  font-size: small;
+}
+
+.footerEnd p {
+  color: black;
+  font-size: x-small;
+}
+
+.footerContent {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLogo img {
+  width: 100px;
+  border-radius: 7px;
+}
+
+.footerAddress,
+.footerContactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerAddress p {
+  margin: 0.25rem;
+}
+
+.footerContactInfo p {
+  margin: 0.5rem;
+}
+
+.footerPhoneInfo {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.25rem;
+}
+
+.footerEmailInfo {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.25rem;
+}
+
+.footerEnd {
+  background-color: white;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footerContent {
+    gap: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerContent {
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footerLogoContainer {
+    display: none;
+  }
+}
